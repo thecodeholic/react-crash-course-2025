@@ -2,6 +2,7 @@ import { Routes, Route, NavLink } from 'react-router-dom'
 import Home from './Home'
 import EmojiPage from './EmojiPage'
 import './App.css'
+import githubImage from '../assets/github.png'
 
 function App() {
   const links = [
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className="max-w-3xl mx-auto p-8 text-center flex flex-col items-center justify-center">
+      <img src={githubImage} alt="" className='w-64' />
       <nav className="mb-8">
         {links.map((link, index) => (
           <NavLink 
